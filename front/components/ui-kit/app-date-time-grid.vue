@@ -105,7 +105,7 @@ const minDate = subYears(new Date(), 1)
 const maxDate = addYears(new Date(), 1)
 
 let hours = [...Array(24).keys()].map((item) => (item < 10 ? `0${item}` : item))
-let minutes = [...Array(12).keys()].map((item) => item * 5).map((item) => (item < 10 ? `0${item}` : item))
+let minutes = [...Array(60).keys()].map((item) => item * 1).map((item) => (item < 10 ? `0${item}` : item))
 
 const labelDateClass = computed(() => {
   return {
